@@ -80,3 +80,10 @@ if page == "Visualisasi Data":
     st.subheader("Visualisasi Frekuensi Buku Tersedia dan Dipinjam")
     data = conn.query('SELECT "Status", COUNT(*) as count FROM buku GROUP BY "Status";', ttl="0")
     st.bar_chart(data.set_index('Status'))
+
+[theme]
+primaryColor="#a3653e"
+backgroundColor="#ffefe6"
+secondaryBackgroundColor="#a3653e"
+textColor="#2b1202"
+font="sans serif"
